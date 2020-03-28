@@ -1,3 +1,8 @@
+# How to configure
+
+[![Watch the video]](https://www.youtube.com/watch?v=0pt_b2ZizQM)
+
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
