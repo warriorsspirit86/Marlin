@@ -534,11 +534,19 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
+// M303 E-1 C8 S70
+// above command is to autotune the heated bed at 70 degree with 8 cycles. To change auto tune at different
+// temperature, re-run above command with appropriate temp value. This is for PLA.
+// https://reprap.org/wiki/Heatbeds_-_A_beginner%27s_guide is a good guide for it.
+  #define DEFAULT_bedKp 23.54
+  #define DEFAULT_bedKi 0.96
+  #define DEFAULT_bedKd 384.39
+
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  //#define DEFAULT_bedKp 10.00
+  //#define DEFAULT_bedKi .023
+  //#define DEFAULT_bedKd 305.4
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
